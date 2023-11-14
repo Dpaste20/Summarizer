@@ -1,0 +1,118 @@
+/* textbox.module.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Passion+One&family=Tilt+Neon&display=swap');
+
+.bodyAqua {
+    background-color: bisque;
+}
+
+.text {
+    width: 700px;
+    height: 300px;
+    resize: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+
+    scrollbar-width: thin;
+    /* scrollbar-color: aquamarine; thumb and track colors */
+
+    /* WebKit (Chrome, Safari) scrollbar styles */
+    overflow-y: scroll; /* Ensure scrollbar is visible only when needed */
+}
+
+.text::-webkit-scrollbar {
+    width: 8px; /* width of the scrollbar */
+}
+
+.text::-webkit-scrollbar-thumb {
+    background-color: rgb(127, 255, 178); /* color of the thumb */
+    border-radius: 5px; /* roundness of the thumb */
+}
+
+.text::-webkit-scrollbar-track {
+    background-color: transparent; /* color of the track */
+    border-radius: 5px; /* roundness of the track */
+    margin-right: 4px;
+  
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Edu TAS Beginner', cursive;
+    flex-direction: column;
+}
+
+.btn {
+    padding: 10px;
+    margin-top: 2%;
+    font-size: 20px;
+    border-radius: 8px;
+    outline: none;
+    background-color: aquamarine;
+    font-weight: 600;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.para {
+    font-size: 20px;
+    font-family: 'Edu TAS Beginner';
+    font-weight: 900;
+    text-align: center;
+}
+
+.copy {
+    height: 30px;
+    background-color: transparent;
+}
+
+.copy_btn {
+    background-color: transparent;
+    border: none;
+    float: right;
+    margin-top: 10px;
+    margin-right: 4%;
+}
+
+.copyMsg_Div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyMessage {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+    .text {
+        height: 100px;
+        width: 300px;
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .para {
+        font-size: 16px;
+    }
+
+    .copy {
+        height: 25px;
+    }
+    .copyMsg_Div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .copyMessage {
+        font-size: 14px;
+    }
+}
